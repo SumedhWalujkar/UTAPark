@@ -50,7 +50,7 @@ public class LoginController extends HttpServlet {
 					String password = request.getParameter("password");
 					Class.forName("com.mysql.jdbc.Driver");
 					Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/utapark?autoReconnect=true&useSSL=false", "root", "Sumedh95");
-					PreparedStatement ps = conn.prepareStatement("select username,password,userrole,firstname,noshow from users where username=? and password=?");
+					PreparedStatement ps = conn.prepareStatement("select username,password,userrole,firstname,noshow,permittype from users where username=? and password=?");
 					ps.setString(1, username);
 					ps.setString(2, password);
 					ResultSet rs = ps.executeQuery();
@@ -58,6 +58,7 @@ public class LoginController extends HttpServlet {
 						session.setAttribute("firstname", rs.getString(4));
 						session.setAttribute("username", rs.getString(1));
 						session.setAttribute("noshow", rs.getString(5));
+						session.setAttribute("permittype", rs.getString(6));
 						Cookie loginCookie = new Cookie("user",rs.getString(1));
 						loginCookie.setMaxAge(30*60);
 						response.addCookie(loginCookie);

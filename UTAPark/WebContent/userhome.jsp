@@ -26,7 +26,7 @@ if(userName == null) response.sendRedirect("index.jsp");
 
 <h1>UTA Park</h1>
 <h1>User Home</h1><br>
-<a href="availablespots.jsp">View Available Spots</a><br><br>
+<a href="Reservation1.jsp">View Available Spots</a><br><br>
 <a href="myreservations.jsp">Reservations</a><br><br>
 <a href="/mavride/UserController?action=listProfile"  target="_top"><span>Update Profile</span></a><br><br>
 <a href="/UTAPark/UserController?action=noshow"  target="_top"><span>No Shows</span></a><br><br>

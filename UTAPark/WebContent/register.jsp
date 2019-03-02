@@ -136,7 +136,7 @@
   		<tr>
   			<td> Permit Type: </td>
   			<td>
-  				<input type="radio" name="usertype" id="usertype" value="regular" checked="checked">Regular
+  				<input type="radio" name="usertype" id="usertype" value="basic" checked="checked">Basic
   				<input type="radio" name="usertype" id="usertype" value="premium">Premium
   				<input type="radio" name="usertype" id="usertype" value="midrange">Mid-Range
   				<input type="radio" name="usertype" id="usertype" value="access">Access

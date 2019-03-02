@@ -6,6 +6,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Welcome</title>
+<link href="myStyle.css" rel="stylesheet"/>
 </head>
 <body>
 	<center>
@@ -21,6 +22,11 @@
 						value="${errorMsgs.userNameError}" type="text"
 						style="background-color: white; color: red; border: none; width: 800px"
 						disabled="disabled" maxlength="60"></td>
+				</tr>
+				<tr>
+				<td>
+				
+				</td>
 				</tr>
 				<tr>
 					<td>Password:</td>
