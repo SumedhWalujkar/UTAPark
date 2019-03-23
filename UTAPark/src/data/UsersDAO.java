@@ -7,7 +7,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import model.User;
-import connection.SQLConnection;
+import util.SQLConnection;
 
 public class UsersDAO {
 	static SQLConnection DBMgr = SQLConnection.getInstance();

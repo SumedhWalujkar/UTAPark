@@ -26,9 +26,11 @@ if(userName == null) response.sendRedirect("index.jsp");
 
 <h1>UTA Park</h1>
 <h1>User Home</h1><br>
-<a href="Reservation1.jsp">View Available Spots</a><br><br>
-<a href="myreservations.jsp">Reservations</a><br><br>
-<a href="/mavride/UserController?action=listProfile"  target="_top"><span>Update Profile</span></a><br><br>
-<a href="/UTAPark/UserController?action=noshow"  target="_top"><span>No Shows</span></a><br><br>
+<a href="Reservation1.jsp">Reserve A Spot</a><br><br>
+<a href="updatebooking.jsp"  target="_top"><span>Update Reservation</span></a><br><br>
+<a href="/UTAPark/UserController?action=noshow"  target="_top"><span>View Current Profile Status</span></a><br><br>
+<a href="transactionstatus.jsp">Reservation Status</a><br><br>
+<a href="deleteTransaction.jsp">Delete Reservation </a><br><br>
+<a href="/UTAPark/UserController?action=listProfile">Update Profile </a><br><br>
 </body>
 </html>

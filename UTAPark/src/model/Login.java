@@ -55,6 +55,6 @@ public class Login implements Serializable{
 		if(UsersDAO.Password(password))
 			result = "Invalid password";
 		return result;
-	}
+	}	
 
 }

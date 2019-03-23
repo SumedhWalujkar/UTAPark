@@ -55,6 +55,7 @@ public class LoginController extends HttpServlet {
 					ps.setString(2, password);
 					ResultSet rs = ps.executeQuery();
 					while (rs.next()) {
+						
 						session.setAttribute("firstname", rs.getString(4));
 						session.setAttribute("username", rs.getString(1));
 						session.setAttribute("noshow", rs.getString(5));
@@ -62,6 +63,7 @@ public class LoginController extends HttpServlet {
 						Cookie loginCookie = new Cookie("user",rs.getString(1));
 						loginCookie.setMaxAge(30*60);
 						response.addCookie(loginCookie);
+						System.out.println(rs.getString(1)+"yo"+rs.getString(2)+"yo"+rs.getString(3));
 						String ur = rs.getString(3);
 						if(ur.equalsIgnoreCase("User")) {
 							if(session.getAttribute("noshow").equals("3"))
@@ -74,10 +76,10 @@ public class LoginController extends HttpServlet {
 							}
 						}
 						else if(ur.equalsIgnoreCase("Manager")) {
-							response.sendRedirect("managerhome.jsp");
+							response.sendRedirect("ManagerHome.jsp");
 						}
 						else{
-							response.sendRedirect("adminhome.jsp");
+							response.sendRedirect("AdminHomePage.jsp");
 						}
 						return;
 					}

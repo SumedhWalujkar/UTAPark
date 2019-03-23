@@ -13,7 +13,10 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="lib" path="C:/Users/sumed/Desktop/FirstProjectfiles/taglibs-standard-impl-1.2.5.jar"/>
 	<classpathentry kind="lib" path="C:/Users/sumed/Desktop/FirstProjectfiles/taglibs-standard-spec-1.2.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sumed/Downloads/easymock-3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sumed/Downloads/JUnitParams-1.0.4.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

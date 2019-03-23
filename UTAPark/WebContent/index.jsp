@@ -12,7 +12,7 @@
 	<center>
 		<h1>Welcome to UTA Park</h1>
 		<h2>Login to continue</h2>
-		<form name="loginForm" action="LoginController" method="post">
+		<form name="loginForm" action="LoginController?loginuser" method="post">
 			<table class="Logintable">
 				<tr>
 					<td>Username:</td>

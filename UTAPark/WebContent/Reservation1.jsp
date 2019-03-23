@@ -31,6 +31,11 @@ if(userName == null) response.sendRedirect("index.jsp");
 			<br>
 				Select Time : 
 				<select name="hour" id="hour">
+						<option value="1"> 1 </option>
+						<option value="2"> 2 </option>
+						<option value="3"> 3 </option>
+						<option value="4"> 4 </option>
+						<option value="5"> 5 </option>
 						<option value="6"> 6 </option>
 						<option value="7"> 7 </option>
 						<option value="8"> 8 </option>
@@ -45,6 +50,10 @@ if(userName == null) response.sendRedirect("index.jsp");
 						<option value="18"> 18 </option>
 						<option value="19"> 19 </option>
 						<option value="20"> 20 </option>
+						<option value="21"> 21 </option>
+						<option value="22"> 22 </option>
+						<option value="23"> 23 </option>
+						<option value="00"> 00 </option>
 				</select>
 				<select name="minutes" id="minutes">
 						<option value="00"> 00 </option>
@@ -77,6 +86,7 @@ if(userName == null) response.sendRedirect("index.jsp");
 			 Cart: 
   				<input type="radio" name="cart" id="cart" value="YES" >YES
   				<input type="radio" name="cart" id="cart" value="NO" checked="checked">NO
+  				
   				<br>
   				<br>
 			Camera: 
@@ -88,6 +98,8 @@ if(userName == null) response.sendRedirect("index.jsp");
   				<input type="radio" name="history" id="history" value="YES" >YES
   				<input type="radio" name="history" id="history" value="NO" checked="checked">NO  			
 			
+			<br>
+			<br>
 			<br>
 			<br>
 			  	<input name="action" value="findspots" type="hidden">
