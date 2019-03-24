@@ -85,7 +85,7 @@ public class Payment implements Serializable{
 			errorMsgs.setNamError(validateFirst_name(action,payment.getName()));
 			errorMsgs.setCardnumberError(validateCardnumber(action, payment.getCardnumber()));
 			errorMsgs.setCvvError(validateCvv(action, payment.getCvv()));
-			errorMsgs.setExpirydateError(validateExpirydate(action,payment.expirydate));
+			errorMsgs.setExpirydateError(validateExpirydate(action,payment.getExpirydate()));
 			errorMsgs.setErrorMsg(action);
 			
 		}
@@ -93,6 +93,7 @@ public class Payment implements Serializable{
 	}
 		private String validateFirst_name(String action, String name) {
 			String result = "";
+			
 			name = name.trim();
 			if(!stringSize(name,6,45))
 				result = "First Name must be between 6 and 45 characters";
@@ -112,10 +113,11 @@ public class Payment implements Serializable{
 		private String validateCvv(String action, String cvv) {
 			String result = "";
 			cvv = cvv.trim();
+			//System.out.println("*****"+cvv);
 			if(!stringSize(cvv,3,4))
-				result = "Card Number Name must have 3 to 4 digits";
-			else if(!cardnumber.matches("^[0-9]+$"))
-				result = "Card Number must contain only digits";
+				result = "CVV must have 3 to 4 digits";
+			else if(!cvv.matches("^[0-9]+$"))
+				result = "CVV must contain only digits";
 			return result;
 		}
 		private String validateExpirydate(String action, String expirydate) {
