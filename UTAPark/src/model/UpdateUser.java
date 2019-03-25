@@ -325,6 +325,7 @@ public class UpdateUser implements Serializable{
 			LocalDate localDate = LocalDate.now();
 			Date date1 = sdf.parse(dob);
 			Date date2 = sdf.parse(dtf.format(localDate));
+			System.out.println("dob:"+dob);
 			if(!dob.matches("^\\d{4}-\\d{2}-\\d{2}$"))
 				result = "Invalid date format";
 			else if(date1.compareTo(date2) > 0)
