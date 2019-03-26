@@ -27,7 +27,7 @@ public class UpdateUserTest {
 	public void test(String action, String username, String prefix, String firstname, String lastname, String password, String cnfpassword, String phone, String dob, String age, String country, String	address, String	city, String  state, String pin, String dlexp, String dlcountry, String permittype, String	usertype, String ErrorMsg, String FirstNameError, String	LastNameError, String	PasswordError, String ConfirmPasswordError, String	PhoneError, String DobError, String AgeError, String CountryError, String AddressError, String CityError, String StateError, String PinError, String DlExpError, String DlCountryError) {
 		updateUser.setUpdateUser(prefix, firstname, lastname, password, cnfpassword, phone, dob, age, country, address, city, state, pin, dlexp, dlcountry, permittype, usertype);
 		updateUser.validateUpdateProfile(action, updateUser, errormsgs);
-		System.out.println("##################################################");
+		/*System.out.println("##################################################");
 		System.out.println(ErrorMsg+" @@ "+errormsgs.getErrorMsg());
 		System.out.println(!(ErrorMsg.equals(errormsgs.getErrorMsg()))? "false":"");
 		System.out.println(FirstNameError+" @@ "+(errormsgs.getFirstNameError()));
@@ -58,7 +58,7 @@ public class UpdateUserTest {
 		System.out.println(!DlExpError.equals(errormsgs.getDlExpError())?"false":"");
 		System.out.println(DlCountryError+" @@ "+(errormsgs.getDlCountryError()));
 		System.out.println(!DlExpError.equals(errormsgs.getDlExpError())?"false":"");
-		
+		*/
 		assertTrue(ErrorMsg.equals(errormsgs.getErrorMsg()));
 		assertTrue(FirstNameError.equals(errormsgs.getFirstNameError()));
 		assertTrue(LastNameError.equals(errormsgs.getLastNameError()));
