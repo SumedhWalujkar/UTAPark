@@ -221,7 +221,7 @@ public class UpdateUser implements Serializable{
 		else if(!stringSize(dlcountry,4,45))
 			result = "Country must be between 4 and 45 characters";
 		else if(!dlcountry.matches("^[a-zA-Z- ]+$"))
-			result = "Country must contain only characters hyphens and spaces ";
+			result = "Country must contain only characters hyphens and spaces";
 		return result;
 	}
 	
@@ -265,7 +265,7 @@ public class UpdateUser implements Serializable{
 		else if(!stringSize(state,4,45))
 			result = "State must be between 4 and 45 characters";
 		else if(!state.matches("^[a-zA-Z- ]+$"))
-			result = "State must contain only characters hyphens and spaces ";
+			result = "State must contain only characters hyphens and spaces";
 		return result;
 	}
 	
@@ -277,7 +277,7 @@ public class UpdateUser implements Serializable{
 		else if(!stringSize(city,4,45))
 			result = "City must be between 4 and 45 characters";
 		else if(!city.matches("^[a-zA-Z- ]+$"))
-			result = "City must contain only characters hyphens and spaces ";
+			result = "City must contain only characters hyphens and spaces";
 		return result;
 	}
 	
@@ -289,7 +289,7 @@ public class UpdateUser implements Serializable{
 		else if(!stringSize(address,3,45))
 			result = "Address must be between 4 and 45 characters";
 		else if(!address.matches("^[0-9a-zA-Z- '/,]+$"))
-			result = "Address must contain only characters hyphens spaces and /' ";
+			result = "Address must contain only characters hyphens spaces and /";
 		return result;
 	}
 	
@@ -301,7 +301,7 @@ public class UpdateUser implements Serializable{
 		else if(!stringSize(country,4,45))
 			result = "Country must be between 4 and 45 characters";
 		else if(!country.matches("^[a-zA-Z- ]+$"))
-			result = "Country must contain only characters hyphens and spaces ";
+			result = "Country must contain only characters hyphens and spaces";
 		return result;
 	}
 	
