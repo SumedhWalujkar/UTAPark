@@ -31,12 +31,12 @@ public class UpdateUserTest {
 		System.out.println(firstname);
 		System.out.println(ErrorMsg+" @@ "+errormsgs.getErrorMsg());
 		System.out.println(FirstNameError+" @@ "+(errormsgs.getFirstNameError()));
-		System.out.println(LastNameError+"  @@ "+(errormsgs.getLastNameError()));
+		System.out.println(LastNameError+" @@ "+(errormsgs.getLastNameError()));
 		System.out.println(PasswordError+" @@ "+(errormsgs.getPasswordError()));
 		System.out.println(ConfirmPasswordError+" @@ "+(errormsgs.getConfirmPasswordError()));
 		System.out.println(PhoneError+" @@ "+(errormsgs.getPhoneError()));
 		System.out.println(DobError+" @@ "+(errormsgs.getDobError()));
-		System.out.println(AgeError+" @@ "+(errormsgs.getFirstNameError()));
+		System.out.println(AgeError+" @@ "+(errormsgs.getAgeError()));
 		System.out.println(CountryError+" @@ "+(errormsgs.getCountryError()));
 		System.out.println(AddressError+" @@ "+(errormsgs.getAddressError()));
 		System.out.println(CityError+" @@"+(errormsgs.getCityError()));
